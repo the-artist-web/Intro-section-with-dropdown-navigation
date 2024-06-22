@@ -1,0 +1,103 @@
+/*---------------------------------------*\
+  #ROOT
+\*---------------------------------------*/
+
+:root {
+    /**
+     * Colors
+     */
+    
+    /* Neutral */
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+
+    /**
+     * Typography
+     */
+
+    /* Body Copy */
+    --Font-size: 18px; /* paragraph */
+
+    /* Font Family */
+    --font-family: "Epilogue", sans-serif;
+}
+
+/*---------------------------------------*\
+  #RESET
+\*---------------------------------------*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+button { display: block; }
+
+a {
+    color: var(--Almost-Black);
+    text-decoration: none;
+}
+
+img { height: auto; }
+
+button {
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--Font-size);
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--Almost-White);
+    font-family: var(--font-family);
+    color: var(--Almost-Black);
+}
+
+::selection {
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+}
+
+html::-webkit-scrollbar {
+    background-color: var(--Almost-White);
+    width: 12px;
+}
+
+html::-webkit-scrollbar-thumb { background-color: var(--Almost-Black); }
+
+
+
+
+
+/*---------------------------------------*\
+  #DUBLICATE ITEM
+\*---------------------------------------*/
+
+.section { padding-block: 72px; }
+
+.container { 
+    padding-inline: 16px; 
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
